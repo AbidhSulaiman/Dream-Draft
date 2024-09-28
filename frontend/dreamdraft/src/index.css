@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.hero {
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px; /* Size of grid squares */
+    background-color: #ffffff;  /* Light background color */
+    color: #333;                /* Text color */
+    padding: 50px;
+  }
+
+  .arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent; 
+    border-bottom: 30px solid transparent; 
+    border-right: 15px solid rgb(76, 75, 75, .35); /* Increase size */
+}
+.arrow-left:hover{
+    border-right: 20px solid rgb(76, 75, 75, .65);
+}
+
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent; 
+    border-bottom: 30px solid transparent; 
+    border-left: 15px solid rgb(76, 75, 75, .35); /* Increase size */
+}
+.arrow-right:hover{
+    border-left: 20px solid rgb(76, 75, 75, .65);
+}
